@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>carti — Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="background">
+
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="glow glow-3"></div>
+
+        <div class="smoke smoke-1"></div>
+        <div class="smoke smoke-2"></div>
+
+        <div class="cross cross-1">✠</div>
+        <div class="cross cross-2">✠</div>
+        <div class="cross cross-3">✠</div>
+        <div class="cross cross-4">✠</div>
+
+        <div id="particles"></div>
+
+    </div>
+
+
+    <!-- PROFILE CARD -->
+    <main class="page">
+
+        <section class="profile-card">
+
+            <!-- BANNER -->
+            <div class="profile-banner">
+
+                <div class="chrome-light"></div>
+
+                <div class="banner-cross">
+                    ✠
+                </div>
+
+                <div class="banner-title">
+                    CARTI
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE PICTURE -->
+            <div class="avatar-container">
+
+                <div class="avatar-ring">
+
+                    <div class="avatar">
+
+                        <img
+                            src="./profile.jpg"
+                            alt="carti profile picture"
+                            id="profileImage"
+                        >
+
+                    </div>
+
+                </div>
+
+                <span class="online-dot"></span>
+
+            </div>
+
+
+            <!-- PROFILE CONTENT -->
+            <div class="profile-content">
+
+                <!-- NAME -->
+                <div class="name-row">
+
+                    <h1>carti</h1>
+
+                    <span class="verified">
+                        ✓
+                    </span>
+
+                </div>
+
+
+                <!-- USERNAME -->
+                <div class="username">
+                    _ty.y
+                </div>
+
+
+                <!-- BADGES -->
+                <div class="badges">
+
+                    <span>✠</span>
+                    <span>GAMER</span>
+                    <span>✦</span>
+                    <span>ONLINE</span>
+
+                </div>
+
+
+                <div class="divider"></div>
+
+
+                <!-- INFO -->
+                <div class="info-grid">
+
+                    <div class="info-box">
+
+                        <span>STATUS</span>
+
+                        <strong>
+                            ONLINE
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-box">
+
+                        <span>VIBE</span>
+
+                        <strong>
+                            DARK
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-box">
+
+                        <span>STYLE</span>
+
+                        <strong>
+                            CHROME
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- GAMES -->
+                <div class="games-section">
+
+                    <div class="games-header">
+
+                        <span class="section-title">
+                            GAMES I PLAY
+                        </span>
+
+                        <span class="game-number">
+                            03
+                        </span>
+
+                    </div>
+
+
+                    <div class="games-grid">
+
+                        <div
+                            class="game"
+                            data-title="ROBLOX"
+                            data-description="A platform full of different games and experiences."
+                        >
+
+                            <div class="game-image roblox">
+                                <span>R</span>
+                            </div>
+
+                            <div class="game-name">
+                                ROBLOX
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="game"
+                            data-title="VALORANT"
+                            data-description="A competitive tactical shooter focused on teamwork and precision."
+                        >
+
+                            <div class="game-image valorant">
+                                <span>V</span>
+                            </div>
+
+                            <div class="game-name">
+                                VALORANT
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="game"
+                            data-title="MINECRAFT"
+                            data-description="A sandbox game focused on exploring, building and surviving."
+                        >
+
+                            <div class="game-image minecraft">
+                                <span>M</span>
+                            </div>
+
+                            <div class="game-name">
+                                MINECRAFT
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BUTTONS -->
+                <div class="button-row">
+
+                    <a
+                        href="#"
+                        class="discord-button"
+                        id="discordButton"
+                    >
+
+                        <span>
+                            DISCORD
+                        </span>
+
+                        <span class="arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <button
+                        class="more-button"
+                        id="moreButton"
+                    >
+                        ✦
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- FOOTER -->
+            <div class="profile-footer">
+
+                <span>
+                    CARTI
+                </span>
+
+                <span>
+                    DIGITAL PROFILE
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- GAME MODAL -->
+    <div
+        class="modal"
+        id="gameModal"
+    >
+
+        <div class="modal-card">
+
+            <button
+                class="close-modal"
+                id="closeModal"
+            >
+                ×
+            </button>
+
+            <div class="modal-small">
+                GAME
+            </div>
+
+            <h2 id="modalTitle">
+                GAME
+            </h2>
+
+            <div class="modal-line"></div>
+
+            <p id="modalDescription">
+                Game description.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- MUSIC -->
+    <audio
+        id="bgMusic"
+        loop
+        autoplay
+        preload="auto"
+    >
+
+        <source
+            src="./music.mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+    <!-- MUSIC PLAYER -->
+    <div class="music-player">
+
+        <button
+            id="musicToggle"
+            class="music-button"
+        >
+            <span id="musicIcon">
+                ♫
+            </span>
+        </button>
+
+        <div class="music-info">
+
+            <span class="music-label">
+                NOW PLAYING
+            </span>
+
+            <span
+                class="music-status"
+                id="musicStatus"
+            >
+                CARTI'S PLAYLIST
+            </span>
+
+        </div>
+
+        <div
+            class="music-bars"
+            id="musicBars"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
